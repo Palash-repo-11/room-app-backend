@@ -1,0 +1,40 @@
+
+###
+GET http://localhost:7500/
+
+
+### login 
+
+POST  http://localhost:7500/login/newuser
+content-type: application/json
+{
+  "email":"palash@gmail.com",
+  "name":"palash",
+  "profileImage":null
+}
+
+### varify user and get userInfo
+POST  http://localhost:7500/users/varifyuser
+content-type: application/json
+{
+    "userId":"yhusk7iy8w7jkhuiy7u2lu92ioj9"
+}
+
+### getAllMeetingAsOwner 
+
+
+POST  http://localhost:7500/users/getallmeetingasowner
+content-type: application/json
+{
+    "userId":"yhusk7iy8w7jkhuiy7u2lu92ioj9"
+}
+
+### getAllMeetingAsMember
+
+POST  http://localhost:7500/users/getallmeetingasmember
+content-type: application/json
+{
+    "userId":"yhusk7iy8w7jkhuiy7u2lu92ioj9"
+}
+
+
