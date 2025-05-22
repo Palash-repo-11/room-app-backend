@@ -54,7 +54,6 @@ const verifyMeeting=async(req,res)=>{
 
     try {
       const meeting = await Meetings.getMeetingInfo(meetingId);
-      console.log(meeting)
       if (meeting) {
         return res.json({ success: true, meeting });
       } else {
